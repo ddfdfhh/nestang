@@ -18,6 +18,7 @@ export class JwtGuard extends AuthGuard('jwt') {
         if (isPublic) {
           return true;
         }
+        /***coomed added in jet guard file */
         return super.canActivate(context);
       }
 }
