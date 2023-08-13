@@ -12,6 +12,7 @@ export class AuthController {
     @Public()
     @Post('login')
     async login(@Body() user: User): Promise<any> {
+      /***cooment aded in aut hcontroller */
       return this.authService.login(user);
     }  
 
